@@ -1,0 +1,9 @@
+https://official-joke-api.appspot.com/random_joke
+
+https://dog.ceo/api/breeds/image/random
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=xxxxx
+
+https://api.thecatapi.com/v1/images/search
