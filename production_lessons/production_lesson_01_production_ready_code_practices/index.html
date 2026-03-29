@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Production Lesson 01 - Production-Ready Code Practices</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Production 01</p>
+      <h1>Production-ready code practices</h1>
+      <p class="hero__text">
+        These are the habits that make code easier to review, safer to change,
+        and less stressful for the next developer who touches it.
+      </p>
+      <a class="back-link" href="../index.html">Back to production track</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>What production-ready usually means</h2>
+        <ul>
+          <li>The code solves the problem clearly instead of only working by accident.</li>
+          <li>The file structure and function names help future readers move quickly.</li>
+          <li>Errors, empty states, and loading states are handled on purpose.</li>
+          <li>Accessibility and responsiveness are treated as part of correctness.</li>
+          <li>Secrets and environment-specific values are not hard-coded into the UI.</li>
+        </ul>
+      </article>
+
+      <article class="content-card">
+        <h2>Healthy habits</h2>
+        <ol>
+          <li>Select DOM nodes once when possible.</li>
+          <li>Prefer small functions with one job each.</li>
+          <li>Use clear names for data, events, and UI helpers.</li>
+          <li>Return early to keep logic flat and readable.</li>
+          <li>Review your own diff before opening a pull request.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Example: from fragile code to maintainable code</h2>
+        <pre><code>// Harder to maintain
+function go(a) {
+  if (a) {
+    document.getElementById("box").innerHTML = a.name + " - " + a.email;
+  }
+}
+
+// Easier to maintain
+const userBox = document.querySelector("#userBox");
+
+function renderUserSummary(user) {
+  if (!user) {
+    userBox.textContent = "No user selected.";
+    return;
+  }
+
+  userBox.textContent = `${user.name} - ${user.email}`;
+}</code></pre>
+        <div class="callout">
+          The stronger version improves naming, avoids repeated DOM queries, and
+          handles invalid input with a visible fallback state.
+        </div>
+      </article>
+    </section>
+
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>Checklist before merging</h2>
+        <ul>
+          <li>Remove dead code and temporary debug logs.</li>
+          <li>Check the small screen layout, not only desktop.</li>
+          <li>Test keyboard interaction for buttons, links, and forms.</li>
+          <li>Confirm user-facing failures show helpful messages.</li>
+          <li>Make sure repeated values are extracted into constants or shared styles.</li>
+        </ul>
+      </article>
+
+      <article class="content-card">
+        <h2>Practice prompts</h2>
+        <ul>
+          <li>Refactor one function in the main lessons so the name explains the intent better.</li>
+          <li>Add an empty-state message to a list-rendering function.</li>
+          <li>Replace one hard-coded repeated selector with a constant.</li>
+          <li>Write your own 5-point production checklist and use it before your next commit.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

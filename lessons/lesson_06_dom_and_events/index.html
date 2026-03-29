@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 06 - DOM and Events</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <p class="eyebrow">Lesson 06</p>
+      <h1 id="pageTitle">DOM and events playground</h1>
+      <p class="intro">
+        Use the buttons below to update the page. This lesson practices element
+        selection, text changes, class toggling, element creation, and click events.
+      </p>
+
+      <div class="button-row">
+        <button id="pointButton" type="button">Add focus point</button>
+        <button id="modeButton" type="button">Toggle calm mode</button>
+        <button id="resetButton" type="button">Reset session</button>
+      </div>
+
+      <section class="status-board">
+        <article class="status-card">
+          <p class="status-label">Focus points</p>
+          <h2 id="pointCount">0</h2>
+        </article>
+        <article class="status-card">
+          <p class="status-label">Mode</p>
+          <h2 id="modeStatus">Normal mode</h2>
+        </article>
+      </section>
+
+      <section>
+        <h2>Activity feed</h2>
+        <ul id="activityList" class="activity-list">
+          <li>Start interacting with the buttons to populate this list.</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

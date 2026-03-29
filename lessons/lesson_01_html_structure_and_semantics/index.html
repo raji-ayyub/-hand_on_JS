@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 01 - HTML Structure and Semantics</title>
+</head>
+<body>
+  <header>
+    <p>Hands-On Frontend Tutorial</p>
+    <h1>Developer Launchpad</h1>
+    <p>A clean HTML page built with meaningful tags.</p>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#join">Join the group</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="topics">
+      <h2>Frontend topics for this week</h2>
+      <p>
+        This section uses a heading, a paragraph, and a list. Those basic
+        elements are enough to communicate a lot when the structure is clear.
+      </p>
+      <ul>
+        <li>HTML structure and semantic tags</li>
+        <li>CSS selectors, spacing, and color</li>
+        <li>JavaScript variables and functions</li>
+        <li>DOM updates and form handling</li>
+      </ul>
+    </section>
+
+    <section id="schedule">
+      <h2>Sample study schedule</h2>
+
+      <article>
+        <h3>Monday: Understand the page skeleton</h3>
+        <p>Practice <code>header</code>, <code>main</code>, <code>section</code>, and <code>footer</code> so the page has a clear shape.</p>
+      </article>
+
+      <article>
+        <h3>Wednesday: Build with lists and links</h3>
+        <p>Use ordered and unordered lists to group related ideas instead of writing everything as plain text.</p>
+      </article>
+
+      <article>
+        <h3>Friday: Add a form</h3>
+        <p>Collect user input with labels, inputs, and a submit button.</p>
+      </article>
+    </section>
+
+    <aside id="join">
+      <h2>Join the practice circle</h2>
+      <p>Use this small form to see how labels and inputs work together.</p>
+
+      <form>
+        <p>
+          <label for="full-name">Full name</label><br />
+          <input id="full-name" name="fullName" type="text" placeholder="Amina Bello" />
+        </p>
+
+        <p>
+          <label for="email-address">Email address</label><br />
+          <input id="email-address" name="email" type="email" placeholder="amina@example.com" />
+        </p>
+
+        <p>
+          <label for="track">Learning track</label><br />
+          <select id="track" name="track">
+            <option value="html-css">HTML and CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="full-frontend">Full frontend path</option>
+          </select>
+        </p>
+
+        <button type="submit">Save my spot</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Lesson 01 shows that strong frontend work starts with strong HTML.</p>
+  </footer>
+</body>
+</html>

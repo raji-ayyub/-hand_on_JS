@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a clean educational website mockup for a frontend study club landing page built with semantic HTML
+Scene/background: bright desktop browser canvas with a warm, beginner-friendly learning mood
+Subject: a simple webpage showing a header, navigation links, a hero intro, a topics section, a schedule section with cards, an aside signup form, and a footer
+Style/medium: polished UI mockup, realistic browser-window presentation
+Composition/framing: wide desktop layout, full-page view, clear section separation
+Lighting/mood: soft daylight, focused and welcoming
+Color palette: warm orange, cream, deep blue, and soft gray
+Constraints: no logos, no watermark, avoid dense tiny text, emphasize layout blocks and semantic structure
+Avoid: messy clutter, dark theme, smartphone-only layout

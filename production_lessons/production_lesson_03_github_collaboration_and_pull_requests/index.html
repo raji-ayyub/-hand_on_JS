@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Production Lesson 03 - GitHub Collaboration and Pull Requests</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Production 03</p>
+      <h1>GitHub collaboration and pull requests</h1>
+      <p class="hero__text">
+        This lesson connects your local Git workflow to team collaboration:
+        remotes, pushing, review, and merging.
+      </p>
+      <a class="back-link" href="../index.html">Back to production track</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>Git vs GitHub</h2>
+        <ul>
+          <li><strong>Git</strong> tracks history in your local repository.</li>
+          <li><strong>GitHub</strong> hosts repositories and supports collaboration, review, and sharing.</li>
+          <li>You can use Git without GitHub, but teams often use both together.</li>
+        </ul>
+      </article>
+
+      <article class="content-card">
+        <h2>Team rule of thumb</h2>
+        <div class="callout">
+          Do your work on a feature branch, open a pull request, and merge after
+          review instead of committing directly to <code>main</code>.
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Common collaboration flow</h2>
+        <pre><code>git clone &lt;repository-url&gt;
+git switch -c feature/search-filter
+# make changes
+git add .
+git commit -m "Add company filter to user directory"
+git push -u origin feature/search-filter</code></pre>
+        <p>After pushing, open a pull request on GitHub and describe the change clearly.</p>
+      </article>
+    </section>
+
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>Good pull request structure</h2>
+        <ul>
+          <li>Short, specific title</li>
+          <li>Summary of the problem and the change</li>
+          <li>Testing notes</li>
+          <li>Screenshots if the UI changed</li>
+          <li>Known limitations if anything is still pending</li>
+        </ul>
+      </article>
+
+      <article class="content-card">
+        <h2>Useful remote commands</h2>
+        <pre><code>git remote -v
+git fetch origin
+git pull origin main
+git push origin branch-name</code></pre>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Example pull request description</h2>
+        <pre><code>Title:
+Add company filter to capstone user directory
+
+Summary:
+- added a select input for company filtering
+- updated app state to store selected company
+- filtered rendered users by search term and company
+
+Testing:
+- searched by name
+- switched between company options
+- verified empty-state message still appears correctly</code></pre>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Practice prompts</h2>
+        <ul>
+          <li>Write three branch names for three imaginary frontend tasks.</li>
+          <li>Write a pull request description for one change in this repo.</li>
+          <li>Pick one small change and describe how you would test it before asking for review.</li>
+          <li>Review one of your own commits and write two helpful review comments.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

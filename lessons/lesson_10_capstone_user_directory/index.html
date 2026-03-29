@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 10 - Capstone User Directory</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Lesson 10 capstone</p>
+      <h1>User directory</h1>
+      <p class="hero__text">
+        Search and filter a list of users loaded from an API. If the request
+        fails, the app falls back to built-in example data so the lesson still works.
+      </p>
+
+      <div class="filters">
+        <label class="field">
+          <span>Search by name</span>
+          <input id="searchInput" type="text" placeholder="Search for a user" />
+        </label>
+
+        <label class="field">
+          <span>Filter by company</span>
+          <select id="companyFilter">
+            <option value="all">All companies</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section id="stats" class="stats"></section>
+    <div id="status" class="status" aria-live="polite"></div>
+    <section id="userList" class="user-grid"></section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

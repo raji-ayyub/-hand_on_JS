@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Production Lesson 02 - Git Fundamentals and Core Commands</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Production 02</p>
+      <h1>Git fundamentals and core commands</h1>
+      <p class="hero__text">
+        Git gets much easier once you understand the basic flow: inspect, edit,
+        review, stage, and commit.
+      </p>
+      <a class="back-link" href="../index.html">Back to production track</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>Simple mental model</h2>
+        <p>Git tracks snapshots of your repository over time.</p>
+        <ol>
+          <li>Check the state with <code>git status</code>.</li>
+          <li>Review changes with <code>git diff</code>.</li>
+          <li>Stage intended files with <code>git add</code>.</li>
+          <li>Commit the staged snapshot with <code>git commit</code>.</li>
+        </ol>
+      </article>
+
+      <article class="content-card">
+        <h2>Golden rule</h2>
+        <div class="callout">
+          If you are confused, run <code>git status</code> first. It tells you
+          what branch you are on, what changed, and what Git expects next.
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Core commands</h2>
+        <pre><code>git status
+git diff
+git diff --staged
+git add path/to/file
+git add .
+git commit -m "Add responsive layout lesson"
+git log --oneline --decorate --graph
+git branch
+git switch -c feature/layout-grid
+git switch main
+git restore path/to/file
+git restore --staged path/to/file</code></pre>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Command guide</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Command</th>
+              <th>Use it when</th>
+              <th>Effect</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>git status</code></td>
+              <td>You want the current truth</td>
+              <td>Shows branch, staged files, unstaged files, and untracked files</td>
+            </tr>
+            <tr>
+              <td><code>git diff</code></td>
+              <td>You want to inspect unstaged edits</td>
+              <td>Shows line-by-line changes not yet staged</td>
+            </tr>
+            <tr>
+              <td><code>git add file</code></td>
+              <td>You are ready to stage a file</td>
+              <td>Moves that file's changes into the staging area</td>
+            </tr>
+            <tr>
+              <td><code>git restore --staged file</code></td>
+              <td>You staged the wrong file</td>
+              <td>Unstages the file without deleting your edits</td>
+            </tr>
+            <tr>
+              <td><code>git restore file</code></td>
+              <td>You want to discard local changes in one file</td>
+              <td>Reverts that file back to the last committed version</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>Safe daily workflow</h2>
+        <pre><code>git status
+git switch -c feature/form-feedback
+# edit files
+git diff
+git add lessons/lesson_07_forms_and_validation/script.js
+git diff --staged
+git commit -m "Add validation feedback messages"</code></pre>
+      </article>
+
+      <article class="content-card">
+        <h2>Practice prompts</h2>
+        <ul>
+          <li>Create a test repository and practice each command above once.</li>
+          <li>Stage the wrong file and recover with <code>git restore --staged</code>.</li>
+          <li>Make an accidental edit and discard it with <code>git restore</code>.</li>
+          <li>Write three stronger commit messages than <code>update files</code>.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

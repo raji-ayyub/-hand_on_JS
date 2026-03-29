@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a storyboard-style web UI mockup for a DOM and events lesson showing before and after interaction states
+Scene/background: browser page presented as an educational storyboard
+Subject: an interactive focus tracker with buttons, a points counter, a mode toggle, and an activity feed, shown in two side-by-side states before and after a button click
+Style/medium: polished educational web UI mockup
+Composition/framing: wide split-panel storyboard with clear state change
+Lighting/mood: bright, active, explanatory
+Color palette: cyan, white, soft green, and slate
+Constraints: no logos, no watermark, very minimal text, emphasize buttons and changing UI states
+Avoid: animation effects, dark theme, clutter

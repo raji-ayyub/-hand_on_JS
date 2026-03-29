@@ -1,0 +1,122 @@
+:root {
+  --page-background: #fdf4ff;
+  --panel-background: #ffffff;
+  --text-strong: #3b0764;
+  --text-muted: #6b21a8;
+  --accent: #db2777;
+  --accent-dark: #be185d;
+  --accent-soft: #fdf2f8;
+  --line: rgba(219, 39, 119, 0.18);
+  --shadow: 0 18px 35px rgba(59, 7, 100, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-strong);
+  background:
+    radial-gradient(circle at top right, rgba(244, 114, 182, 0.18), transparent 30%),
+    linear-gradient(180deg, #fff1f2 0%, #ffffff 100%);
+}
+
+.page {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.panel {
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: var(--panel-background);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+}
+
+.intro {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(219, 39, 119, 0.3);
+  border-radius: 14px;
+  font: inherit;
+}
+
+button {
+  margin-top: 0.5rem;
+  border: 0;
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.feedback {
+  margin-top: 1rem;
+}
+
+.feedback.error {
+  padding: 1rem;
+  border-radius: 16px;
+  background: #fff1f2;
+  color: #9f1239;
+}
+
+.feedback.success {
+  padding: 1rem;
+  border-radius: 16px;
+  background: #fdf2f8;
+  color: var(--accent-dark);
+}
+
+.feedback ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.summary {
+  margin-top: 1rem;
+}
+
+.summary-card {
+  padding: 1rem;
+  border-radius: 18px;
+  background: var(--accent-soft);
+}
+
+.summary-card p {
+  margin: 0.45rem 0;
+}

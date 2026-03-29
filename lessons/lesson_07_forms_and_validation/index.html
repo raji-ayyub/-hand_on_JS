@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 07 - Forms and Validation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <div>
+        <p class="eyebrow">Lesson 07</p>
+        <h1>Practice session signup form</h1>
+        <p class="intro">
+          Submit the form below to see how JavaScript validation works before data
+          is accepted.
+        </p>
+      </div>
+
+      <form id="signupForm" novalidate>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Amina Bello" />
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="amina@example.com" />
+
+        <label for="track">Track</label>
+        <select id="track" name="track">
+          <option value="">Choose a track</option>
+          <option value="html-css">HTML and CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="project-builds">Project builds</option>
+        </select>
+
+        <label for="goal">Practice goal for this week</label>
+        <textarea id="goal" name="goal" rows="4" placeholder="I want to finish the DOM lesson and build one extra mini project."></textarea>
+
+        <button type="submit">Submit practice plan</button>
+      </form>
+
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+      <section id="summary" class="summary"></section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

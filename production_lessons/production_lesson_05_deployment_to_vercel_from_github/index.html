@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Production Lesson 05 - Deployment to Vercel from GitHub</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Production 05</p>
+      <h1>Deployment to Vercel from GitHub</h1>
+      <p class="hero__text">
+        This lesson covers the usual GitHub to Vercel deployment flow for frontend
+        projects, including preview deployments and production deploys.
+      </p>
+      <a class="back-link" href="../index.html">Back to production track</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>What this gives you</h2>
+        <ul>
+          <li>Preview deployments for branch pushes and pull requests</li>
+          <li>Production deployments from your production branch</li>
+          <li>A live hosted URL for testing and sharing</li>
+          <li>A clean path to add a custom domain later</li>
+        </ul>
+      </article>
+
+      <article class="content-card">
+        <h2>Before you start</h2>
+        <ul>
+          <li>A GitHub repository with the project pushed to it</li>
+          <li>A Vercel account</li>
+          <li>A project that already works locally</li>
+          <li>Correct GitHub permissions for the repository</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Standard dashboard flow</h2>
+        <ol>
+          <li>Push your project to GitHub.</li>
+          <li>Sign in to Vercel.</li>
+          <li>Click <strong>New Project</strong>.</li>
+          <li>Under <strong>Import Git Repository</strong>, connect GitHub.</li>
+          <li>Select the repository and click <strong>Import</strong>.</li>
+          <li>Review build settings, root directory, and environment variables.</li>
+          <li>Click <strong>Deploy</strong>.</li>
+        </ol>
+        <div class="callout">
+          After import, Vercel automatically creates preview deployments for
+          branch pushes and production deployments for updates to the production branch.
+        </div>
+      </article>
+    </section>
+
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>Typical Git workflow before deployment</h2>
+        <pre><code>git switch -c feature/add-search-filter
+# make your changes
+git add .
+git commit -m "Add search filter to the user directory"
+git push -u origin feature/add-search-filter</code></pre>
+        <p>Then open the pull request, test the Vercel preview URL, and merge when ready.</p>
+      </article>
+
+      <article class="content-card">
+        <h2>Common configuration points</h2>
+        <ul>
+          <li>Framework preset</li>
+          <li>Root directory</li>
+          <li>Build command</li>
+          <li>Output directory</li>
+          <li>Environment variables</li>
+        </ul>
+        <p>For plain HTML, CSS, and JavaScript projects, the setup is often minimal.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Common issues</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Issue</th>
+              <th>Likely cause</th>
+              <th>What to check</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Repository missing in Vercel</td>
+              <td>Wrong account or missing repo permissions</td>
+              <td>GitHub account connection and repository access</td>
+            </tr>
+            <tr>
+              <td>Deployment succeeds but app is broken</td>
+              <td>Wrong build, root, output, or env settings</td>
+              <td>Project settings and build logs</td>
+            </tr>
+            <tr>
+              <td>Preview is correct but production is old</td>
+              <td>Wrong production branch or wrong connected repo</td>
+              <td>Project Git settings in Vercel</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>Good habits</h2>
+        <ul>
+          <li>Keep the production branch stable.</li>
+          <li>Use preview deployments before merging.</li>
+          <li>Store secrets in Vercel environment variables, not in source files.</li>
+          <li>Re-check deployment settings after moving folders inside the repository.</li>
+        </ul>
+      </article>
+
+      <article class="content-card">
+        <h2>Practice prompts</h2>
+        <ul>
+          <li>Connect a small practice repository to Vercel.</li>
+          <li>Push a feature branch and confirm a preview deployment appears.</li>
+          <li>Merge it and confirm production updates.</li>
+          <li>Write down the exact branch that acts as production for your test project.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

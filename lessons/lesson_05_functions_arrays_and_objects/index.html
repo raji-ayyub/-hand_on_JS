@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 05 - Functions, Arrays, and Objects</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+      color: #14532d;
+    }
+
+    .page {
+      width: min(860px, 100%);
+      margin: 0 auto;
+    }
+
+    .panel {
+      padding: 1.5rem;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: 0 18px 35px rgba(20, 83, 45, 0.1);
+    }
+
+    .button-row,
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .button-row {
+      margin: 1.25rem 0;
+    }
+
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 0.8rem 1rem;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      background: #15803d;
+      color: #ffffff;
+    }
+
+    .stats {
+      margin-bottom: 1rem;
+    }
+
+    .stat-card,
+    .lesson-card {
+      border-radius: 16px;
+      background: #f0fdf4;
+      padding: 1rem;
+    }
+
+    #lessonList {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .lesson-card h2 {
+      margin-bottom: 0.35rem;
+    }
+
+    .lesson-card p {
+      margin: 0.35rem 0;
+      color: #166534;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <p>Lesson 05</p>
+      <h1>Functions, arrays, and objects</h1>
+      <p>
+        The page below is driven by JavaScript data. The buttons change which
+        part of the array gets rendered.
+      </p>
+
+      <div class="button-row">
+        <button id="showAllButton" type="button">Show all lessons</button>
+        <button id="showCompletedButton" type="button">Show completed</button>
+        <button id="showUpcomingButton" type="button">Show upcoming</button>
+      </div>
+
+      <div class="stats" id="stats"></div>
+      <section id="lessonList"></section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

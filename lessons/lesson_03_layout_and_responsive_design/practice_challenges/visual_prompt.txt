@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a responsive learning dashboard UI that teaches layout and responsive design
+Scene/background: browser window showing a desktop-first dashboard with responsive hints
+Subject: a hero section, summary cards, a grid of learning tracks, and a two-column workflow section, with a small inset showing how the layout stacks on mobile
+Style/medium: polished educational UI mockup
+Composition/framing: wide dashboard layout, clean grid, visible mobile inset or split view
+Lighting/mood: fresh, organized, energetic
+Color palette: teal, white, slate, and mint accents
+Constraints: no logos, no watermark, minimal text, prioritize layout structure over decoration
+Avoid: cluttered analytics overload, dark mode, unrealistic tiny widgets

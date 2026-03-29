@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a polished capstone user directory web app mockup for a frontend tutorial
+Scene/background: full browser UI with a premium educational design style
+Subject: a hero header with search and company filter controls, summary stat cards, and a grid of user profile cards
+Style/medium: polished modern web application UI
+Composition/framing: wide desktop composition with the whole interface visible
+Lighting/mood: clean, professional, aspirational
+Color palette: teal, white, soft aqua, and slate
+Constraints: no logos, no watermark, minimal text, emphasize search, filtering, and card layout
+Avoid: clutter, mobile-only crop, dark theme

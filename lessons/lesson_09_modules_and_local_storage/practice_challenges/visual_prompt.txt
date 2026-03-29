@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a modular web app UI for saving frontend learning resources with browser persistence
+Scene/background: clean productivity interface inside a browser window
+Subject: a resource form at the top, a status message area, and saved resource cards below with category tags and delete buttons
+Style/medium: polished educational productivity UI
+Composition/framing: medium-wide composition with form and list both visible
+Lighting/mood: organized, calm, practical
+Color palette: violet, white, lavender, and slate
+Constraints: no logos, no watermark, very little text, emphasize reusable sections and storage feel
+Avoid: dark theme, clutter, social-media look

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 08 - Async JavaScript and Fetch</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <p class="eyebrow">Lesson 08</p>
+      <h1>Async JavaScript and fetch</h1>
+      <p class="intro">
+        Use the buttons below to request data from public APIs. This lesson
+        focuses on loading states, successful responses, and graceful fallback behavior.
+      </p>
+
+      <div class="button-row">
+        <button id="jokeButton" type="button">Load a joke</button>
+        <button id="dogButton" type="button">Load a dog image</button>
+        <button id="allButton" type="button">Load both</button>
+      </div>
+
+      <section class="card-grid">
+        <article class="card">
+          <p class="card-label">Joke API</p>
+          <h2>Random joke</h2>
+          <p id="jokeStatus" class="status-text">Ready</p>
+          <p id="jokeOutput" class="result-text">Click the button to load a joke.</p>
+        </article>
+
+        <article class="card">
+          <p class="card-label">Dog API</p>
+          <h2>Random dog</h2>
+          <p id="dogStatus" class="status-text">Ready</p>
+          <img
+            id="dogImage"
+            class="dog-image"
+            src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"
+            alt="A dog from the API"
+          />
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

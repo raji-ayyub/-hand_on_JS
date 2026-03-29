@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a storyboard-style API dashboard UI that teaches async JavaScript and fetch
+Scene/background: browser page shown as a learning example
+Subject: a two-card dashboard for loading a joke and an image from APIs, shown in multiple visible states such as ready, loading, and loaded
+Style/medium: polished educational UI mockup
+Composition/framing: wide storyboard composition with obvious status labels and content areas
+Lighting/mood: warm, informative, modern
+Color palette: amber, white, cream, and charcoal
+Constraints: no logos, no watermark, avoid tiny text, emphasize loading and result states
+Avoid: cluttered analytics, dark mode, overly realistic browser chrome

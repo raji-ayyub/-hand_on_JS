@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a lesson planning web interface that teaches functions, arrays, and objects
+Scene/background: clean browser page with structured cards
+Subject: a study plan manager showing filter buttons, summary stat cards, and a list of lesson cards with duration and completion status
+Style/medium: polished educational productivity UI
+Composition/framing: wide panel with top controls and lesson list below
+Lighting/mood: practical, optimistic, focused
+Color palette: green, white, mint, and deep forest accents
+Constraints: no logos, no watermark, minimal text, clear data grouping
+Avoid: clutter, dark mode, spreadsheet look

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 09 - Modules and Local Storage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <p class="eyebrow">Lesson 09</p>
+      <h1>Saved frontend resources</h1>
+      <p class="intro">
+        Add useful links to your personal learning board. Refresh the page and
+        the data will still be there because it is stored in the browser.
+      </p>
+
+      <div class="callout">
+        Run this lesson from a local server because it uses ES modules.
+      </div>
+
+      <form id="resourceForm" class="resource-form">
+        <label for="title">Resource title</label>
+        <input id="title" name="title" type="text" placeholder="MDN Flexbox Guide" />
+
+        <label for="url">Resource URL</label>
+        <input id="url" name="url" type="url" placeholder="https://developer.mozilla.org/" />
+
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option value="">Choose a category</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="career">Career</option>
+        </select>
+
+        <button type="submit">Save resource</button>
+      </form>
+
+      <div id="message" class="message" aria-live="polite"></div>
+      <section id="resourceList" class="resource-list"></section>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

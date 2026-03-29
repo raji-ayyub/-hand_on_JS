@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a simple web interface for a JavaScript basics challenge showing learner scores and dynamic output
+Scene/background: bright browser page focused on one interactive output panel
+Subject: a clean card with learner stats, two action buttons, a score summary box, and a status message that changes based on results
+Style/medium: beginner-friendly educational web UI mockup
+Composition/framing: medium-wide composition showing the whole panel clearly
+Lighting/mood: clear, calm, encouraging
+Color palette: blue, white, pale sky, and dark slate
+Constraints: no logos, no watermark, avoid tiny text, show obvious button and output areas
+Avoid: complicated dashboards, mobile-only crop, noisy background

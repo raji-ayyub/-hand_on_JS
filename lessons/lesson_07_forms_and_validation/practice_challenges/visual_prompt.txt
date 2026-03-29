@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a storyboard-style web form UI that teaches form validation
+Scene/background: clean browser page with a form and validation feedback
+Subject: a signup form shown in two states side by side, one with validation errors highlighted and one with a successful confirmation card
+Style/medium: polished beginner-friendly web UI mockup
+Composition/framing: wide split view, easy-to-read form layout
+Lighting/mood: calm, clear, supportive
+Color palette: pink, white, berry, and light rose
+Constraints: no logos, no watermark, minimal readable text, emphasize input fields and error states
+Avoid: mobile crop, complex multi-step form, dark theme

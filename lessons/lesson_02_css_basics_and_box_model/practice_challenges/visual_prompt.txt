@@ -1,0 +1,11 @@
+Use case: ui-mockup
+Asset type: lesson challenge visual aid
+Primary request: a polished profile card UI for a frontend mentor, designed to teach CSS basics and the box model
+Scene/background: centered card on a soft editorial background
+Subject: one large profile card with avatar, name, role label, short biography, colorful skill pills, and a bold button
+Style/medium: modern web UI mockup
+Composition/framing: close UI composition focused on spacing, shadows, and padding
+Lighting/mood: bright, crisp, confident
+Color palette: peach, coral, white, navy, and muted gray
+Constraints: no logos, no watermark, very little text, clearly visible spacing and card edges
+Avoid: cluttered dashboard, dark theme, too many cards

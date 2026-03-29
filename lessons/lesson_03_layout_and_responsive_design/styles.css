@@ -1,0 +1,131 @@
+:root {
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: #ffffff;
+  --text-strong: #0f172a;
+  --text-muted: #475569;
+  --accent: #0f766e;
+  --line: rgba(15, 118, 110, 0.16);
+  --shadow: 0 18px 35px rgba(15, 23, 42, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-strong);
+  background:
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.22), transparent 28%),
+    linear-gradient(180deg, #effcf9 0%, #f8fafc 48%, #ffffff 100%);
+}
+
+.page {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.hero,
+.workflow {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+.hero__copy,
+.hero__summary,
+.workflow__text,
+.workflow__panel,
+.track-card {
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.hero__copy,
+.workflow__text,
+.workflow__panel {
+  padding: 2rem;
+}
+
+.hero__copy h1,
+.workflow__text h2 {
+  margin-top: 0.4rem;
+  font-size: clamp(2rem, 3.2vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.hero__copy p,
+.workflow__text p,
+.track-card p,
+.summary-card p,
+.workflow__panel li {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.eyebrow,
+.summary-card__label {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hero__summary {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.summary-card {
+  padding: 1.4rem;
+  border-radius: 20px;
+  background: var(--surface-strong);
+}
+
+.summary-card h2 {
+  margin: 0.35rem 0;
+}
+
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.track-card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.workflow__panel ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.workflow__panel li + li {
+  margin-top: 0.65rem;
+}
+
+@media (max-width: 760px) {
+  .hero,
+  .workflow {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    width: min(100%, calc(100% - 1rem));
+  }
+}

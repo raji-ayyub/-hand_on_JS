@@ -1,1 +1,6 @@
 archive
+.env
+
+# Generated lesson challenge visuals
+lessons/*/practice_challenges/visuals/*
+!lessons/*/practice_challenges/visuals/README.md

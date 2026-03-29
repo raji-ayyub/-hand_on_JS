@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Production Lesson 04 - Common Git Errors and Fixes</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Production 04</p>
+      <h1>Common Git errors and fixes</h1>
+      <p class="hero__text">
+        Git problems feel much less scary when you know the usual causes and the
+        safer recovery steps.
+      </p>
+      <a class="back-link" href="../index.html">Back to production track</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <article class="content-card">
+        <h2>Start here when something feels wrong</h2>
+        <pre><code>git status
+git branch
+git log --oneline --decorate --graph -10</code></pre>
+        <div class="callout">
+          These commands answer the three most important questions: Where am I,
+          what changed, and what happened recently?
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Common problems and safe fixes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Likely cause</th>
+              <th>Safer fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wrong file is staged</td>
+              <td>You used <code>git add .</code> too broadly</td>
+              <td><code>git restore --staged path/to/file</code></td>
+            </tr>
+            <tr>
+              <td>Need to discard local edits in one file</td>
+              <td>You changed a file by mistake</td>
+              <td><code>git restore path/to/file</code></td>
+            </tr>
+            <tr>
+              <td>Push rejected</td>
+              <td>The remote branch changed first</td>
+              <td><code>git fetch origin</code>, then pull or rebase, then push again</td>
+            </tr>
+            <tr>
+              <td>Merge conflict</td>
+              <td>Two branches changed the same lines differently</td>
+              <td>Resolve markers manually, stage the file, then continue</td>
+            </tr>
+            <tr>
+              <td>Wrong commit message</td>
+              <td>The latest commit message is weak or incorrect</td>
+              <td><code>git commit --amend -m "Better message"</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="section content-grid">
+      <article class="content-card">
+        <h2>Examples</h2>
+        <pre><code># Unstage one file
+git restore --staged src/app.js
+
+# Discard local changes in one file
+git restore src/app.js
+
+# Update local history before pushing
+git fetch origin
+git pull --rebase origin main
+git push origin feature/search-filter
+
+# Fix the latest commit message
+git commit --amend -m "Improve user directory filter state"</code></pre>
+      </article>
+
+      <article class="content-card">
+        <h2>What to avoid unless you truly mean it</h2>
+        <ul>
+          <li><code>git reset --hard</code> can permanently discard uncommitted work.</li>
+          <li>Force-pushing shared branches can disrupt teammates.</li>
+          <li>Randomly retrying commands without checking <code>git status</code> usually creates more confusion.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="content-card">
+        <h2>Practice prompts</h2>
+        <ul>
+          <li>Practice staging the wrong file and undoing it safely.</li>
+          <li>Create two branches with conflicting edits to the same line and resolve the conflict.</li>
+          <li>Make a weak commit message, then improve it with <code>git commit --amend</code>.</li>
+          <li>Write your own "Git panic checklist" with the three commands you run first.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
